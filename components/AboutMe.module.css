@@ -1,0 +1,13 @@
+.projectLink {
+  color: lightskyblue;
+  background-color: black;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.projectLink:hover,
+.projectLink:active {
+  color: white;
+  background-color: white;
+  color: black;
+}
