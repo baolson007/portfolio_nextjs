@@ -1,5 +1,8 @@
 import { Fragment } from "react";
 import classes from "./AboutMe.module.css";
+import Link from "next/link";
+import Card from "./ui/Card";
+
 function AboutMe() {
   return (
     <Fragment>
@@ -7,12 +10,9 @@ function AboutMe() {
       <p>brief background</p>
       <p>photos?</p>
       <p>include skills section</p>
-      <p>
-        Be sure to checkout my{" "}
-        <a className={classes.projectLink} href="/Projects">
-          Projects
-        </a>
-      </p>
+      <Card className={classes.projectLink}>
+        <Link href="/Projects">Be sure to checkout my Projects</Link>
+      </Card>
     </Fragment>
   );
 }

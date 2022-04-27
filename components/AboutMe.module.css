@@ -2,7 +2,9 @@
   color: lightskyblue;
   background-color: black;
   border-radius: 15px;
-  padding: 8px;
+  padding: 8px 8px;
+  width: 40%;
+  /* text-align: center; */
 }
 
 .projectLink:hover,
