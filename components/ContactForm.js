@@ -16,7 +16,9 @@ function Contact(props) {
       email: emailInputRef.current.value,
       message: messageInputRef.current.value,
     };
-
+    ///////////
+    // TO DO //
+    // - VALIDATE INPUTS PRIOR TO API CALL BELOW
     props.onContactMe(enteredData);
   }
 
