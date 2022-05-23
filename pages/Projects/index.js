@@ -1,11 +1,31 @@
+import Project from "../../components/Project";
+import { descriptions } from "../../public/ProjectDescriptions";
+import classes from "./Projects.module.css";
+
+const cryptoDescription = descriptions.CRYPTO_DESCRIPTION;
+const houseBuddyDescription = descriptions.HOUSEBUDDY_DESCRIPTION;
+
 function Projects() {
   return (
-    <ul>
+    <ul className={classes.projects}>
       <li>
-        <a href="https://react-http-93208.web.app/">CryptoTracker</a>
+        <Project
+          name="CryptoTracker"
+          image=""
+          description={cryptoDescription}
+          link="https://react-http-93208.web.app/"
+        />
       </li>
       <li>
-        <a href="https://benolson.pythonanywhere.com/">Housebuddy</a>
+        <Project
+          name="HouseBuddy"
+          image=""
+          description={houseBuddyDescription}
+          link="https://benolson.pythonanywhere.com/"
+        />
+      </li>
+      <li>
+        <p> more projects go here </p>
       </li>
     </ul>
   );

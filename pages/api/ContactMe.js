@@ -20,16 +20,10 @@ async function handler(req, res) {
     const db = client.db();
     const contactCollection = db.collection("contact");
     const result = await contactCollection.insertOne(data);
-
-    console.log(result);
-
     client.close();
-
-    res.status(201).json({ message: "DB Updated" });
 
     //send email
     const body = req.body;
-
     const msg = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
@@ -43,8 +37,12 @@ async function handler(req, res) {
       html: msg.replace(/\r\n/g, "<br/>"),
     };
 
-    await mail.send(emailData);
-    res.status(200).json({ status: "OK" });
+    try {
+      await mail.send(emailData);
+      return res.status(200).json({ status: "OK" });
+    } catch (error) {
+      return res.status(error.statusCode || 500).json({ error: error.message });
+    }
   }
 }
 
