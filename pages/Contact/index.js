@@ -4,6 +4,9 @@ import { useRouter } from "next/router";
 function Contact() {
   const router = useRouter();
 
+  ///////
+  //TO DO
+  // - TRY/CATCH
   async function contactMeHandler(enteredData) {
     const response = await fetch("/api/ContactMe", {
       method: "POST",
