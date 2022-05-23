@@ -14,7 +14,7 @@ function Resume() {
       <h1>RESUME</h1>
       <a
         className={classes.resumeLink}
-        href="/files/portfolio resume.pdf"
+        href="/files/resume.pdf"
         target="_blank"
       >
         See Resume in New Tab (PDF)
