@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
+import validator from "validator";
 import Card from "./ui/Card";
 
 import classes from "./ContactForm.module.css";
 
 function Contact(props) {
+  const [emailValid, setEmailIsValid] = useState(true);
   const nameInputRef = useRef();
   const messageInputRef = useRef();
   const emailInputRef = useRef();
@@ -16,10 +18,13 @@ function Contact(props) {
       email: emailInputRef.current.value,
       message: messageInputRef.current.value,
     };
-    ///////////
-    // TO DO //
-    // - VALIDATE INPUTS PRIOR TO API CALL BELOW
-    props.onContactMe(enteredData);
+
+    if (validator.isEmail(enteredData.email)) {
+      setEmailIsValid(true);
+      props.onContactMe(enteredData);
+    } else {
+      setEmailIsValid(false);
+    }
   }
 
   return (
@@ -32,7 +37,10 @@ function Contact(props) {
 
         <div className={classes.control}>
           <label htmlFor="email">Email</label>
-          <input type="text" required id="email" ref={emailInputRef} />
+          <input type="email" required id="email" ref={emailInputRef} />
+          {!emailValid && (
+            <p className={classes.invalid}>please enter valid email</p>
+          )}
         </div>
 
         <div className={classes.control}>

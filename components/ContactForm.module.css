@@ -22,6 +22,11 @@
   padding: 0.5rem;
 }
 
+.invalid {
+  font-size: smaller;
+  color: red;
+}
+
 .actions {
   margin-top: 0.5rem;
   text-align: right;

@@ -6,7 +6,9 @@ import Card from "./ui/Card";
 function AboutMe() {
   return (
     <Fragment>
-      <h1>ABOUT ME COMING SOON</h1>
+      <h2> Hello, I&apos;m Ben.</h2>
+      <h2>I&apos;m a full stack web developer.</h2>
+
       <p>brief background</p>
       <p>photos?</p>
       <p>include skills section</p>

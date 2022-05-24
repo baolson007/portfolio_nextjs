@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import classes from "./Navbar.module.css";
+import { SiOctopusdeploy } from "react-icons/si";
 
 function Navbar() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Ben Olson</div>
+      {/* <div className={classes.logo}>Ben Olson</div> */}
+      <Link href="/About" passHref>
+        <SiOctopusdeploy className={classes.logo} size={40} />
+      </Link>
       <nav>
         <ul>
           <li>
