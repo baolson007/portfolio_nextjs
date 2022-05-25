@@ -1,5 +1,8 @@
 .form {
   padding: 1.5rem;
+  background-color: rgb(106, 106, 160);
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .control {
@@ -18,7 +21,7 @@
   display: block;
   font: inherit;
   border-radius: 4px;
-  border: 1px solid rgb(150, 145, 145);
+  border: 1px solid rgb(5, 5, 5);
   padding: 0.5rem;
 }
 

@@ -15,5 +15,9 @@
 }
 
 .word {
-  color: royalblue;
+  color: rgb(79, 81, 189);
+}
+
+.title {
+  text-align: center;
 }

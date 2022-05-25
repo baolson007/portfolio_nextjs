@@ -28,31 +28,29 @@ function Contact(props) {
   }
 
   return (
-    <Card>
-      <form className={classes.form} onSubmit={submitHandler}>
-        <div className={classes.control}>
-          <label htmlFor="name">Name</label>
-          <input type="text" required id="name" ref={nameInputRef} />
-        </div>
+    <form className={classes.form} onSubmit={submitHandler}>
+      <div className={classes.control}>
+        <label htmlFor="name">Name</label>
+        <input type="text" required id="name" ref={nameInputRef} />
+      </div>
 
-        <div className={classes.control}>
-          <label htmlFor="email">Email</label>
-          <input type="email" required id="email" ref={emailInputRef} />
-          {!emailValid && (
-            <p className={classes.invalid}>please enter valid email</p>
-          )}
-        </div>
+      <div className={classes.control}>
+        <label htmlFor="email">Email</label>
+        <input type="email" required id="email" ref={emailInputRef} />
+        {!emailValid && (
+          <p className={classes.invalid}>please enter valid email</p>
+        )}
+      </div>
 
-        <div className={classes.control}>
-          <label htmlFor="message">Drop me a line below!</label>
-          <textarea id="message" required rows="5" ref={messageInputRef} />
-        </div>
+      <div className={classes.control}>
+        <label htmlFor="message">Drop me a line below!</label>
+        <textarea id="message" required rows="5" ref={messageInputRef} />
+      </div>
 
-        <div className={classes.actions}>
-          <button>Submit</button>
-        </div>
-      </form>
-    </Card>
+      <div className={classes.actions}>
+        <button>Submit</button>
+      </div>
+    </form>
   );
 }
 

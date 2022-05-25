@@ -20,7 +20,7 @@ function Resume() {
         See Resume in New Tab (PDF)
       </a>
       <iframe
-        src="https://drive.google.com/file/d/1GwX8FmP1PqFhgYmn7MO9Y2LzA_Ajngk7/preview"
+        src="https://drive.google.com/file/d/1JEzWH9MznXb8JBiKWUTGY7nsKToUU3tI/preview"
         width="640"
         height="850"
       ></iframe>
