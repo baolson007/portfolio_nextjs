@@ -7,7 +7,6 @@ import { Fragment } from "react";
 
 export default function Home() {
   const router = useRouter();
-  // Make sure we're in the browser
   if (typeof window !== "undefined") {
     router.push("/About");
   }

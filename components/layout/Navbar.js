@@ -6,7 +6,6 @@ import { SiOctopusdeploy } from "react-icons/si";
 function Navbar() {
   return (
     <header className={classes.header}>
-      {/* <div className={classes.logo}>Ben Olson</div> */}
       <Link href="/About" passHref>
         <SiOctopusdeploy className={classes.logo} size={40} />
       </Link>
