@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Open Sans", "Poppins", sans-serif;
   background-color: rgb(200, 201, 194);
-  background-image: url("../public/yellowPencil.jpg");
+  background-image: url("/yellowPencil.jpg");
 }
 
 h1,
