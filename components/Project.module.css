@@ -1,6 +1,8 @@
 .project {
   padding: 0.5rem;
   margin: 0.5rem;
+  background-color: rgba(169, 196, 196, 0.4);
+  text-align: center;
 }
 
 .project button {
@@ -8,9 +10,9 @@
   padding: 0.5rem 1.5rem;
   margin-left: 1rem;
   margin-right: auto;
-  border: 1px solid #108b00;
+  border: 1px solid #117903;
   color: white;
-  background: #18854e;
+  background: #147042;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
   cursor: pointer;

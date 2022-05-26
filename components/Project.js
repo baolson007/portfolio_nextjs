@@ -2,10 +2,12 @@ import classes from "./Project.module.css";
 import Card from "./ui/Card";
 
 function Project(props) {
+  const icon = props.image;
   return (
     <Card className={classes.project}>
       <h3>{props.name}</h3>
       <p>{props.description}</p>
+      <div>{props.image && props.image}</div>
       <span>
         {props.link && (
           <button>
