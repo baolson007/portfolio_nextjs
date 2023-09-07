@@ -59,7 +59,7 @@ function Projects() {
             />
           }
           description={passwordGeneratorDescription}
-          git="https://github.com/baolson007/PasswordGenerator_ReactFlask/tree/master/src"
+          git="https://github.com/baolson007/password_generator"
         />
       </li>
       <li>
